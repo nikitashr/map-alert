@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <TableRow>
+            <TextView
+        	android:layout_width="fill_parent"
+        	android:layout_height="fill_parent"
+        	android:layout_weight="1"
+        	android:background="#cccccc"
+        	android:text="Latitude">
+        	</TextView>
+
+        	<TextView
+        	android:layout_width="fill_parent"
+        	android:layout_height="fill_parent"
+        	android:layout_weight="1"
+        	android:background="#cccccc"
+        	android:text="Longitude">
+        	</TextView>
+
+        	<TextView
+        	    android:layout_width="fill_parent"
+        	    android:layout_height="fill_parent"
+        	    android:layout_weight="1"
+        	    android:background="#cccccc"
+        	    android:text="Altitude" >
+        	</TextView>
+        
+        </TableRow>
+        
+    </TableLayout>
+    
+    <ScrollView android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        
+        <TableLayout
+        android:id="@+id/resulttable"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <TableRow>
+            <TextView
+        	android:id="@+id/tvLat"
+       			android:layout_width="fill_parent"
+       			android:layout_height="fill_parent"
+       			android:layout_weight="1"
+       			android:text="Latitude">
+        	</TextView>
+        	
+            <TextView
+        	android:id="@+id/tvLong"
+       			android:layout_width="fill_parent"
+       			android:layout_height="fill_parent"
+       			android:layout_weight="1"
+       			android:text="Longitude">
+        	</TextView>
+        	
+            <TextView
+        	android:id="@+id/tvAlt"
+       			android:layout_width="fill_parent"
+       			android:layout_height="fill_parent"
+       			android:layout_weight="1"
+       			android:text="Altitude">
+        	</TextView>
+
+        </TableRow>
+      
+    </TableLayout>
+        
+    </ScrollView>
+    
+    <requestFocus />
+
+</LinearLayout>

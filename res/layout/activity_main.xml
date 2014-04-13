@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="fill_parent"
+        android:layout_height="120dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="#b8c8ee"
+        android:gravity="center"
+        android:paddingBottom="5dp"
+        android:paddingTop="70dp"
+        android:text="MAP ALERT"
+        android:textSize="25sp" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="53dp"
+        android:orientation="vertical"
+        android:background="#b8c8ee"
+        android:paddingLeft="15dp" >
+
+        <RadioGroup
+            android:id="@+id/radioOption"
+            android:layout_marginTop="20dp"
+			android:layout_marginBottom="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <RadioButton
+                android:id="@+id/radioHealth"
+                android:layout_width="289dp"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:checked="true"
+                android:text="Health" />
+
+            <RadioButton
+                android:id="@+id/radioDisaster"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:text="Disaster" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnAlert"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:background="#b8c8ee"
+        android:text="Push Alert" />
+
+</RelativeLayout>
